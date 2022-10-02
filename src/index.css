@@ -1,0 +1,90 @@
+/* RESET CSS */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+* {
+    margin: 0;
+}
+html, body {
+    height: 100%;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+input, button, textarea, select {
+    font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* START NAVBAR CSS */
+#NavBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1240px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#NavBar ul {
+    display: flex;
+    column-gap: 55px;
+    list-style-type: none;
+    font-size: 24px;
+    font-weight: 400;
+    color: #FF6060;
+}
+
+#NavBar ul a:hover{
+    text-decoration: underline;
+}
+/* END NAVBAR CSS */
+
+/* START FEED CSS */
+#Feed {
+    max-width: 1240px;
+    margin: auto;
+}
+
+.hero {
+    background-image: url(utils/img-hero.png);
+    padding-top: 75px;
+    padding-bottom: 75px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    text-align: center;
+    color: white;
+    font-size: 48px;
+}
+/* END FEED CSS */
+
+/* START FOOTER CSS */
+#Footer {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+    align-items: center;
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+
+#Footer p{
+    color: white;
+    font-size: 24px;
+    font-weight: 400;
+}
+/* END FOOTER CSS */

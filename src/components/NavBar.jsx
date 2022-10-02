@@ -1,10 +1,19 @@
 //rafce to autocomplete
-import React from 'react'
+import { Link } from 'react-router-dom';
 
-function NavBar() {
-  return (
-    <div>NavBar</div>
-  )
-}
+import logo from '../utils/logo.png';
+
+const NavBar = () => (
+  <div id='NavBar'>
+    <Link to='/'>
+      <img src={logo} alt="logo kasa" />
+    </Link>
+    
+    <ul>
+      <li><Link to='/'>Accueil</Link></li>
+      <li><Link to='/about'>A Propos</Link></li>
+    </ul>
+  </div>
+)
 
 export default NavBar
