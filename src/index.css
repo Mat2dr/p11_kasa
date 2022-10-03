@@ -60,14 +60,59 @@ a {
 
 .hero {
     background-image: url(utils/img-hero.png);
+    background-position: center;
     padding-top: 75px;
     padding-bottom: 75px;
     margin-top: 20px;
-    margin-bottom: 20px;
     border-radius: 25px;
     text-align: center;
     color: white;
     font-size: 48px;
+}
+
+.gallery {
+    background-color: #F6F6F6;
+    padding: 50px;
+    border-radius: 25px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.thumb {
+    position: relative;
+    overflow: hidden;
+    height: 350px;
+    width: 350px;
+    border-radius: 10px;
+}
+.thumb .thumb-img{
+    position: absolute;
+    display: block;
+    object-fit: cover;
+}
+.img-gradient::after {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, rgb(0, 0, 0) 100%);
+    margin-top: -150px;
+    height: 120px;
+    width: 100%;
+    content: '';
+  }
+.thumb .img-gradient {
+    position:absolute;
+    left:0; top:0;
+    width:100%;
+    height:100%;
+}
+.thumb .thumb-title{
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    padding: 20px;
+    color: white;
+    font-size: 18px;
 }
 /* END FEED CSS */
 
