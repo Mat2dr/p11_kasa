@@ -1,13 +1,16 @@
 import React from 'react'
 import imgtest from '../utils/img-hero.png';
 
-const Thumb = () => (
+function Thumb(props) {
+
+  return (
     <div class='thumb'>
         <div class='img-gradient'>
-            <img class='thumb-img' src={ imgtest } alt="" />
+            <img class='thumb-img' src={ props.coverImg } alt="" />
         </div>
-        <p class='thumb-title'>Titre de la location</p>
+        <p class='thumb-title'>{ props.title }</p>
     </div>
   )
+}
 
 export default Thumb
