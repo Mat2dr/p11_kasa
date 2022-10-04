@@ -120,6 +120,162 @@ a {
 }
 /* END FEED CSS */
 
+/* START DETAILS CSS */
+.container-carrousel {
+    max-width: 1240px;
+    height: 410px;
+    margin: auto;
+}
+.slider{
+    height: 100%;
+    position: relative;
+}
+.slide{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    object-fit: cover;
+    border-radius: 25px;
+}
+.leftArrow {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 32px;
+    font-size: 45px;
+    color: white;
+    z-index: 1;
+    cursor: pointer;
+}
+.rightArrow {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    right: 32px;
+    font-size: 45px;
+    color: white;
+    z-index: 1;
+    cursor: pointer;
+}
+.numberSlide {
+    position: absolute;
+    top: 90%;
+    transform: translate(50%, -50%);
+    right: 50%;
+    font-size: 18px;
+    color: white;
+    z-index: 1;
+}
+
+.header-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FF6060;
+    max-width: 1240px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.header-details--title h1{
+    font-size: 36px;
+    font-weight: 400;
+}
+.header-details--title h3{
+    font-size: 18px;
+    font-weight: 400;
+}
+.header-details--host {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.header-details--host p{
+    font-size: 18px;
+    font-weight: 400;
+}
+.header-details--host img{
+    border-radius: 150px;
+    width: 64px;
+}
+
+
+.subheader-details {
+    max-width: 1240px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.subheader-details--tags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.tag {
+    background-color: #FF6060;
+    color: white;
+    padding: 5px 25px 5px 25px;
+    width: fit-content;
+    border-radius: 15px;
+}
+
+
+.more-details{
+    display: flex;
+    gap: 30px;
+    max-width: 1240px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.more-details .accordion-section{
+    width: 50%;
+}
+.accordion-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+.accordion {
+    display: flex;
+    justify-content: space-between;
+    background-color: #FF6060;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 13px;
+    display: flex;
+    align-items: center;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+.accordion:hover,
+.active {
+    background-color: #fa4545;
+}
+.accordion-content {
+    background-color: #F6F6F6;
+    color: #FF6060;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    max-height: 0;
+}
+.accordion-text {
+    margin: 20px;
+}
+.accordion-icon {
+    transform: rotate(180deg);
+    transition: all 0.3s ease;
+}
+.rotate {
+    transform: rotate(0deg);
+}
+/* END DETAILS CSS */
+
 /* START FOOTER CSS */
 #Footer {
     background-color: black;

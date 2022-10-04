@@ -1,14 +1,13 @@
 import React from 'react'
-import imgtest from '../utils/img-hero.png';
 
 function Thumb(props) {
 
   return (
-    <div class='thumb'>
-        <div class='img-gradient'>
-            <img class='thumb-img' src={ props.coverImg } alt="" />
+    <div className='thumb'>
+        <div className='img-gradient'>
+            <img className='thumb-img' src={ props.coverImg } alt="" />
         </div>
-        <p class='thumb-title'>{ props.title }</p>
+        <p className='thumb-title'>{ props.title }</p>
     </div>
   )
 }
