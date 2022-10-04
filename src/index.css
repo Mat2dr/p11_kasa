@@ -93,6 +93,7 @@ a {
     display: block;
     object-fit: cover;
     height: 100%;
+    width:100%;
 }
 .img-gradient::after {
     display: block;
@@ -276,6 +277,58 @@ a {
 }
 /* END DETAILS CSS */
 
+/* START about CSS */
+#About {
+    max-width: 1240px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.about-hero {
+    background-image: url(utils/img-about.png);
+    background-position: center;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    margin-top: 20px;
+    border-radius: 25px;
+    text-align: center;
+    color: white;
+    font-size: 48px;
+}
+
+/* END about CSS */
+
+/* START 404 CSS */
+.page-not-found {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    color: #FF6060;
+}
+
+.page-not-found span {
+    font-size: 288px;
+    font-weight: 800;
+}
+.page-not-found p {
+    font-size: 36px;
+    font-weight: 400;
+}
+.page-not-found button {
+    margin-top: 175px;
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+    outline: none;
+    background-color: white;
+    cursor: pointer;
+    color: #FF6060;
+    text-decoration: underline;
+}
+/* END 404 CSS */
+
 /* START FOOTER CSS */
 #Footer {
     background-color: black;
@@ -293,3 +346,79 @@ a {
     font-weight: 400;
 }
 /* END FOOTER CSS */
+
+
+
+@media screen and (max-width: 1240px)
+{
+    #NavBar {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    #Feed {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    #About {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    #About .about-hero {
+        height: 335px;
+    }
+}
+
+@media screen and (max-width: 800px)
+{
+    #NavBar ul {
+        font-size: 12px;
+    }
+    #NavBar img {
+        width: 145px;
+    }
+    .hero {
+        text-align: start;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 15px;
+    }
+    .hero p{
+        font-size: 24px;
+    }
+    
+    #Footer p{
+        font-size: 12px;
+        font-weight: 400;
+    }
+    #Footer img{
+        width: 122px;
+    }
+}
+
+@media screen and (max-width: 510px)
+{
+    .gallery {
+        flex-direction: column;
+        padding: 0px;
+        background-color: white;
+    }
+    .thumb {
+        width: 100%;
+        height: 255px;
+    } 
+    .accordion {
+        font-size: 13px;
+    }
+    .accordion-content {
+        font-size: 13px;
+    }
+    .accordion-icon {
+        width: 10px;
+    }
+}

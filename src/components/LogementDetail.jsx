@@ -13,9 +13,7 @@ function LogementDetail() {
         details = element;
       }
     });
-    console.log(details);
   };
-
   fetchDetails();
   
   const tags = details.tags.map((tag)=> {

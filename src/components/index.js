@@ -9,4 +9,5 @@ export {default as Tag } from './Tag';
 export {default as Chevron } from './Chevron';
 export {default as Accordion } from './Accordion';
 export {default as About } from './About';
+export {default as PageNotFound } from './PageNotFound';
 export {default as Footer } from './Footer';
