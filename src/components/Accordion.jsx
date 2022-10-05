@@ -9,7 +9,6 @@ function Accordion(props) {
     const [setRotate, setRotateState] = useState('accordion-icon');
 
     const content = useRef(null);
-    console.log(props.desc);
 
     function toggleAccordion() {
         setActiveState(setActive === '' ? "active" : '');
@@ -24,7 +23,6 @@ function Accordion(props) {
                   <p key={element}>{element}</p>
                 )
               });
-              console.log("Its a list");
         } else {
             descElements = props.desc;
         }

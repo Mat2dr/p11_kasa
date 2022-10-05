@@ -222,13 +222,20 @@ a {
     border-radius: 15px;
 }
 
+.stars {
+    display: flex;
+    gap: 10px;
+}
+.subheader-details--mobile {
+    display: none;
+}
 
 .more-details{
     display: flex;
     gap: 30px;
     max-width: 1240px;
     margin: auto;
-    margin-bottom: 20px;
+    margin-bottom: 100px;
 }
 .more-details .accordion-section{
     width: 50%;
@@ -372,12 +379,42 @@ a {
     #About .about-hero {
         height: 335px;
     }
+    .container-carrousel{
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .header-details{
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .subheader-details{
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .more-details{
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .more-details .accordion-section {
+        width: 100%;
+        margin-top: 0px;
+    }
 }
 
 @media screen and (max-width: 800px)
-{
+{   
     #NavBar ul {
-        font-size: 12px;
+        font-size: 20px;
     }
     #NavBar img {
         width: 145px;
@@ -391,7 +428,57 @@ a {
     .hero p{
         font-size: 24px;
     }
-    
+    .container-carrousel {
+        height: 335px;
+    }
+    .leftArrow {
+        width: 11px;
+    }
+    .rightArrow {
+        width: 11px;
+    }
+    .numberSlide {
+        font-size: 12px;
+    }
+    .header-details--host {
+        display: none;
+    }
+    .subheader-details--reviews {
+        display: none;
+    }
+    .subheader-details--mobile {
+        margin-left: 20px;
+        margin-right: 20px;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+    }
+    .header-details--host--mobile {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .header-details--host--mobile p{
+        font-size: 18px;
+        font-weight: 400;
+        color: #FF6060;
+    }
+    .header-details--host--mobile img{
+        border-radius: 150px;
+        width: 64px;
+    }
+
+
+    .page-not-found span{
+        font-size: 96px;
+    }
+    .page-not-found p{
+        font-size: 18px;
+        text-align: center;
+    }
+    .page-not-found button{
+        font-size: 14px;
+    }
     #Footer p{
         font-size: 12px;
         font-weight: 400;
@@ -403,6 +490,9 @@ a {
 
 @media screen and (max-width: 510px)
 {
+    #NavBar ul {
+        font-size: 12px;
+    }
     .gallery {
         flex-direction: column;
         padding: 0px;
@@ -412,6 +502,24 @@ a {
         width: 100%;
         height: 255px;
     } 
+    .header-details--title h1{
+        font-size: 18px;
+    }
+    .header-details--title h3{
+        font-size: 14px;
+    }
+    .tag {
+        font-size: 10px;
+    }
+    .star {
+        width: 18px;
+    }
+    .header-details--host--mobile p{
+        font-size: 12px;
+    }
+    .header-details--host--mobile img{
+        width: 32px;
+    }
     .accordion {
         font-size: 13px;
     }

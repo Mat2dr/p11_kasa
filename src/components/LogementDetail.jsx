@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom';
 import Data from '../data.json';
 
-import {Carrousel, Tag, Accordion} from './';
+import {Carrousel, Tag, Accordion, Rating } from './';
 
 function LogementDetail() {
   let params = useParams();
@@ -44,7 +44,14 @@ function LogementDetail() {
           {tags}
         </div>
         <div className="subheader-details--reviews">
-          <p>{ details.rating }</p>
+          <Rating ratingStars={ details.rating }/>
+        </div>
+      </div>
+      <div className='subheader-details--mobile'>
+        <Rating ratingStars={ details.rating }/>
+        <div className="header-details--host--mobile">
+          <p>{ details.host.name }</p>
+          <img src={ details.host.picture } alt="" />
         </div>
       </div>
       <div className='more-details'>
